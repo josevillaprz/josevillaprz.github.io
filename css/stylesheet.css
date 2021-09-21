@@ -1,0 +1,292 @@
+/* CSS Reset ============================== */
+body, main, section, article, h1, h2, h3, p, a, ul, li, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 100%;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    box-sizing: border-box; }
+
+:root{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: canada-type-gibson, sans-serif;
+    font-size: 1.6rem;
+}
+
+/* DEFAULT ================================================== */
+h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+
+p {
+    color: #6A6A6A;
+    font-size: 1.6rem;
+}
+
+/* HEADER ================================== */
+header {
+    background-color: #212121;
+}
+
+nav {
+    font-size: 1.6rem;
+    color: #fff;
+    height: 12rem;
+}
+
+nav > div {
+    width: 100%;
+}
+
+nav > div > a{
+    background-image: url("../images/Logo/logo.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 0;
+}
+
+header ul {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* CTA ====================================== */
+section, section > div {
+    height: 100%;
+}
+
+#callToAction {
+    background-image: url("../images/barbell.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 64rem;
+}
+
+#callToAction p, #startBtn {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#callToAction p:first-of-type {
+    color: #fff;
+    font-size: 7.4rem;
+}
+
+#callToAction p:last-of-type {
+    color: #def000;
+    font-size: 2.4rem;
+}
+
+
+#startBtn {
+    margin-top: 2rem;
+    border-radius: .3rem;
+    text-transform: uppercase;
+    background: #def000;
+    color: #414141;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.8rem;
+    width: 15rem;
+}
+
+
+/* FOOTER ============================================================*/
+footer {
+    padding: 6rem 0;
+    background: #212121;
+}
+
+footer div:first-child li {
+    margin: 1rem 5rem;
+}
+
+footer div:last-child li {
+    margin: 1rem 1rem;
+}
+
+#socialLinks li:nth-of-type(1) a {
+    padding: 2rem;
+    background-image: url("/images/media-icons/instagram.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    font-size: 0;
+}
+
+#socialLinks li:nth-of-type(2) a {
+    padding: 2rem;
+    background-image: url("/images/media-icons/facebook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    font-size: 0;
+
+}
+
+#socialLinks li:nth-of-type(3) a {
+    padding: 2rem;
+    background-image: url("/images/media-icons/youtube.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    font-size: 0;
+
+}
+
+#socialLinks li:nth-of-type(4) a {
+    padding: 2rem;
+    background-image: url("/images/media-icons/twitter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    font-size: 0;
+
+}
+
+#socialLinks li:nth-of-type(5) a {
+    padding: 2rem;
+    background-image: url("/images/media-icons/snapchat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    font-size: 0;
+
+}
+
+/* ABOUT =========================================================== */
+#about {
+    padding: 12rem 0;
+}
+
+span {
+    color: #5DBB46;
+}
+
+video {
+    margin: 0 auto;
+}
+
+/* SERVICES =========================================================== */
+#services {
+    padding: 5rem 0 8rem 0;
+    background: #212121;
+}
+
+#services p, #services h2 {
+    color: #fff;
+}
+
+#services p:first-of-type {
+    font-size: 2.4rem;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+#services img {
+    padding: 2.5rem;
+    width: 15rem;
+    border-radius: 2rem;   
+    background: rgb(93,187,70);
+    background: linear-gradient(5deg, rgba(93,187,70,1) 0%, rgba(222,240,0,1) 100%);  
+}
+
+/* REVIEWS =========================================================== */
+#reviews {
+    padding: 12rem 0;
+    text-align: center;
+}
+
+#reviews p:last-of-type {
+    color:#5DBB46;
+    font-weight: 600;
+    margin: 1rem 0 4rem 0;
+}
+
+#reviews img {
+    border-radius: 50%;
+    width: 18rem;
+    margin-bottom: 2rem;
+}    
+
+
+/* BMI CALCULATOR ===================================================== */
+
+#bmiCalc p{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+#bmiCalc {
+    border-radius: 2rem;
+    background-color: #212121;
+    height: 40rem;
+    margin-bottom: 12rem;
+}
+
+/* PROGRAMS =========================================================== */
+#programs > p {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 1000px) {
+    #programs > p {
+        width: 65%;
+    }
+}
+
+#programs img {
+    width: 100%;
+}
+
+#programs > div div {
+    margin-bottom: 2rem;
+} 
+
+#programs > div div p:first-of-type {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #414141;
+}
+
+/* MEMBERSHIPS =========================================================== */
+#memberships {
+    text-align: center;
+}
+
+#memberships li, .plan {
+    font-weight: 600;
+}
+
+#memberships > div div {
+    margin: 2rem 0;
+    height: 40rem;
+    border-radius: 1rem;
+    background: rgb(93,187,70);
+    background: linear-gradient(5deg, rgba(93,187,70,1) 0%, rgba(222,240,0,1) 100%);  
+}
+
+.plan {
+    font-size: 2.4rem;
+}
