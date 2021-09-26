@@ -1,5 +1,6 @@
 /* CSS Reset ============================== */
-body, main, section, article, h1, h2, h3, p, a, ul, li, button, input, textarea, select{
+
+body, main, section, article, h1, h2, h3, p, a, ul, li, button, input, textarea, select {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -7,9 +8,10 @@ body, main, section, article, h1, h2, h3, p, a, ul, li, button, input, textarea,
     text-decoration: none;
     color: inherit;
     border: none;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+}
 
-:root{
+:root {
     font-size: 62.5%;
 }
 
@@ -19,6 +21,7 @@ body {
 }
 
 /* DEFAULT ================================================== */
+
 h1 {
     text-transform: uppercase;
     font-size: 40px;
@@ -40,6 +43,7 @@ p {
 }
 
 /* HEADER ================================== */
+
 header {
     background-color: #212121;
 }
@@ -50,11 +54,11 @@ nav {
     height: 12rem;
 }
 
-nav > div {
+nav>div {
     width: 100%;
 }
 
-nav > div > a{
+nav>div>a {
     background-image: url("../images/Logo/logo.png");
     background-repeat: no-repeat;
     background-position: left;
@@ -67,8 +71,14 @@ header ul {
     text-transform: uppercase;
 }
 
+nav li a:hover {
+    color: #fff;
+    border-bottom: 3px solid #def000;
+}
+
 /* CTA ====================================== */
-section, section > div {
+
+section, section>div {
     height: 100%;
 }
 
@@ -95,7 +105,6 @@ section, section > div {
     font-size: 2.4rem;
 }
 
-
 #startBtn {
     margin-top: 2rem;
     border-radius: .3rem;
@@ -107,10 +116,15 @@ section, section > div {
     justify-content: center;
     height: 4.8rem;
     width: 15rem;
+    transition: transform .3s ease-in-out;
 }
 
+#startBtn:hover {
+    transform: scale(1.1);
+}
 
 /* FOOTER ============================================================*/
+
 footer {
     padding: 6rem 0;
     background: #212121;
@@ -140,7 +154,6 @@ footer div:last-child li {
     background-position: center;
     background-size: 32px;
     font-size: 0;
-
 }
 
 #socialLinks li:nth-of-type(3) a {
@@ -150,7 +163,6 @@ footer div:last-child li {
     background-position: center;
     background-size: 32px;
     font-size: 0;
-
 }
 
 #socialLinks li:nth-of-type(4) a {
@@ -160,7 +172,6 @@ footer div:last-child li {
     background-position: center;
     background-size: 32px;
     font-size: 0;
-
 }
 
 #socialLinks li:nth-of-type(5) a {
@@ -170,10 +181,10 @@ footer div:last-child li {
     background-position: center;
     background-size: 32px;
     font-size: 0;
-
 }
 
 /* ABOUT =========================================================== */
+
 #about {
     padding: 12rem 0;
 }
@@ -187,6 +198,7 @@ video {
 }
 
 /* SERVICES =========================================================== */
+
 #services {
     padding: 5rem 0 8rem 0;
     background: #212121;
@@ -205,19 +217,25 @@ video {
 #services img {
     padding: 2.5rem;
     width: 15rem;
-    border-radius: 2rem;   
-    background: rgb(93,187,70);
-    background: linear-gradient(5deg, rgba(93,187,70,1) 0%, rgba(222,240,0,1) 100%);  
+    border-radius: 2rem;
+    background: rgb(93, 187, 70);
+    background: linear-gradient(5deg, rgba(93, 187, 70, 1) 0%, rgba(222, 240, 0, 1) 100%);
+    transition: transform .2s ease-in-out;
+}
+
+#services img:hover {
+    transform: scale(1.1);
 }
 
 /* REVIEWS =========================================================== */
+
 #reviews {
     padding: 12rem 0;
     text-align: center;
 }
 
 #reviews p:last-of-type {
-    color:#5DBB46;
+    color: #5DBB46;
     font-weight: 600;
     margin: 1rem 0 4rem 0;
 }
@@ -226,12 +244,11 @@ video {
     border-radius: 50%;
     width: 18rem;
     margin-bottom: 2rem;
-}    
-
+}
 
 /* BMI CALCULATOR ===================================================== */
 
-#bmiCalc p{
+#bmiCalc p {
     font-size: 4rem;
     color: #fff;
     font-weight: 600;
@@ -240,19 +257,49 @@ video {
 #bmiCalc {
     border-radius: 2rem;
     background-color: #212121;
-    height: 40rem;
     margin-bottom: 12rem;
+    padding: 5rem;
+}
+
+#bmiCalc label {
+    color: #def000;
+    font-weight: 600;
+}
+
+#bmiCalc input, #bmiCalc select {
+    width: 50%;
+    background: none;
+    border-bottom: 2px solid #BABABA;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    margin-bottom: 6rem;
+}
+
+#bmiCalc h2 {
+    color: #fff;
+    margin-bottom: 2.5rem;
+}
+
+#bmiCalc p {
+    font-size: 7rem;
+    color: #def000
+}
+
+#bmiCalc>div>div {
+    margin-bottom: 4rem;
 }
 
 /* PROGRAMS =========================================================== */
-#programs > p {
+
+#programs>p {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 5rem;
 }
 
 @media (min-width: 1000px) {
-    #programs > p {
+    #programs>p {
         width: 65%;
     }
 }
@@ -261,44 +308,45 @@ video {
     width: 100%;
 }
 
-#programs > div div {
+#programs>div div {
     margin-bottom: 2rem;
-} 
+}
 
-#programs > div div p:first-of-type {
+#programs>div div p:first-of-type {
     font-size: 2.4rem;
     font-weight: 600;
     color: #414141;
 }
 
 /* MEMBERSHIPS =========================================================== */
+
 #memberships {
     text-align: center;
 }
 
-#memberships > p {
+#memberships>p {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 5rem;
 }
 
 @media (min-width: 1000px) {
-    #memberships > p {
+    #memberships>p {
         width: 65%;
     }
 }
 
-#memberships li, .plan, .plan + p {
+#memberships li, .plan, .plan+p {
     font-weight: 600;
 }
 
-#memberships > div div {
+#memberships>div div {
     margin: 2rem 0;
     width: 35rem;
     height: 40rem;
     border-radius: 1rem;
-    background: rgb(93,187,70);
-    background: linear-gradient(5deg, rgba(93,187,70,1) 0%, rgba(222,240,0,1) 100%);  
+    background: rgb(93, 187, 70);
+    background: linear-gradient(5deg, rgba(93, 187, 70, 1) 0%, rgba(222, 240, 0, 1) 100%);
 }
 
 .plan {
@@ -306,7 +354,7 @@ video {
     font-size: 2.4rem;
 }
 
-.plan + p{
+.plan+p {
     font-size: 4rem;
     color: #fff;
 }
@@ -320,7 +368,24 @@ video {
 }
 
 /* CONTACT ================================================================= */
-#contact > div {
+
+#contact>p {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+#contact form {
+    padding: 0 5rem;
+}
+
+@media (min-width: 1000px) {
+    #contact>p {
+        width: 65%;
+    }
+}
+
+#contact>div {
     margin: 6rem 0;
 }
 
@@ -338,7 +403,7 @@ textarea {
     border-radius: 5px;
     border: 2px solid #BABABA;
 }
-    
+
 #contact label {
     font-weight: 600;
     color: #5DBB46;
@@ -353,4 +418,11 @@ button {
     height: 4.8rem;
     width: 15rem;
     align-self: end;
+}
+
+@media (max-width: 768px) {
+    button {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
 }
