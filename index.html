@@ -10,6 +10,7 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/tsc2fym.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+
 </head>
 
 <body>
@@ -124,25 +125,25 @@
         <section class="container" id="bmiCalc">
             <!-- BMI section -->
             <div class="row">
-                <div class="col d-flex flex-column align-items-center">
+                <div class="col d-flex flex-column align-items-center" id="output">
                     <h2 class="text-center">Calculate your BMI.</h2>
-                    <p>32%</p>
+                    <!-- <p>32%</p> -->
                 </div>
-                <form action="#" class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                <form class="col-12 col-md-6 d-flex flex-column justify-content-center">
                     <div class="row">
                         <div class="col-6 d-flex flex-column">
                             <label for="height">Height</label>
-                            <input type="number" id="height" placeholder="in" name="height" min="0">
+                            <input type="number" id="height" placeholder="in" name="height" min="0" required>
                         </div>
                         <div class="col-6 d-flex flex-column">
                             <label for="weight">Weight</label>
-                            <input type="number" id="weight" placeholder="lbs" name="weight" min="0">
+                            <input type="number" id="weight" placeholder="lbs" name="weight" min="0" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6 d-flex flex-column">
                             <label for="age">Age</label>
-                            <input type="number" id="age" placeholder="0" name="age" min="0">
+                            <input type="number" id="age" placeholder="0" name="age" min="0" required>
                         </div>
                         <div class="col-6 d-flex flex-column">
                             <label for="gender-select">Gender</label>
@@ -187,6 +188,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
+    <script src="/javascript/validation.js" type="text/javascript"></script>
+    <script src="/javascript/utils.js" type="text/javascript"></script>
+    <script src="/javascript/main.js" type="text/javascript"></script>
 </body>
 
 </html>
